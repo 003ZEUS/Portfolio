@@ -1,0 +1,40 @@
+SHERYAR JAVED
+Unity Game Developer (Gameplay Programmer)
+
+Email: sheryar.j003@gmail.com
+GitHub: https://github.com/003ZEUS
+
+SUMMARY
+Gameplay programmer specializing in polished mechanics, responsive controls, and complete end-to-end game features in Unity. Experienced building games from scratch with a strong focus on game feel, iteration speed, and clean, scalable systems.
+
+CORE SKILLS
+- Unity (2D & 3D)
+- C# / Gameplay Programming
+- Player Controllers (2D/3D), Camera Systems
+- Combat Systems, Enemy AI, Boss Design
+- UI Systems, Game State, Save/Load
+- Unity Input System (Keyboard/Mouse + Controller)
+- Optimization & Debugging
+- Mobile Deployment & WebGL Builds
+- Git / Version Control
+
+SELECTED PROJECTS
+2D Platformer Game
+- Implemented full gameplay loop: player controller, enemy AI, combat, hazards, and level systems.
+- Designed responsive movement and combat feedback to improve readability and game feel.
+
+Arc Raiders Inspired Controller System
+- Built an advanced third-person controller with camera switching and modern movement tuning.
+- Implemented keyboard + controller support using Unity Input System and combat-ready movement logic.
+
+Block Blast Style Puzzle Game
+- Developed grid-based puzzle mechanics and scoring system with mobile-first architecture.
+- Focused on clean systems for fast iteration and feature expansion.
+
+Flappy Bird Style Game
+- Implemented procedural obstacle spawning, scoring, restart flow, and polish-focused feel improvements.
+
+TOOLS & WORKFLOW
+- Unity Profiler, Frame Debugger, Debug tools
+- Iterative prototyping, clean architecture for gameplay features
+

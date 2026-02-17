@@ -73,6 +73,13 @@ export default function Hero() {
             >
               Contact Me
             </a>
+            <a
+              href="/Sheryar_Javed_Resume.txt"
+              download
+              className="px-8 py-4 border-2 border-neon-purple/60 text-gray-200 font-semibold rounded-lg hover:bg-neon-purple/10 transition-all duration-300 hover:shadow-neon-sm"
+            >
+              Download Resume
+            </a>
           </motion.div>
         </motion.div>
       </div>

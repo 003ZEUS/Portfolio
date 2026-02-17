@@ -7,7 +7,8 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const CONTACT_EMAIL = "hello@example.com"; // Replace with your email
+  const CONTACT_EMAIL = "sheryar.j003@gmail.com";
+  const GITHUB_URL = "https://github.com/003ZEUS";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,6 +30,29 @@ export default function Contact() {
           <p className="text-gray-400 mb-8">
             Have a project in mind? Let&apos;s build something together.
           </p>
+
+          <div className="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="glass-panel rounded-xl p-4 border border-neon-purple/20 hover:border-neon-purple/50 transition-all duration-300 hover:shadow-neon-sm"
+            >
+              <div className="text-xs tracking-wide text-gray-500">EMAIL</div>
+              <div className="mt-1 font-medium text-gray-200 break-all">
+                {CONTACT_EMAIL}
+              </div>
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="glass-panel rounded-xl p-4 border border-neon-purple/20 hover:border-neon-purple/50 transition-all duration-300 hover:shadow-neon-sm"
+            >
+              <div className="text-xs tracking-wide text-gray-500">GITHUB</div>
+              <div className="mt-1 font-medium text-gray-200 break-all">
+                github.com/003ZEUS
+              </div>
+            </a>
+          </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
