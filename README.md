@@ -27,11 +27,35 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deployment (Vercel)
 
-```bash
-npm run build
+### Important: Ensure `app` directory is in your repo
+
+The build fails if the `app` directory is missing. Verify your project structure before pushing:
+
+```
+Portfolio/
+├── app/           ← Must exist at repo root
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+├── package.json
+└── ...
 ```
 
-Deploy to Vercel with one click or connect your GitHub repo.
+### Deploy steps
+
+1. **Commit and push everything** to your GitHub repo:
+   ```bash
+   git add .
+   git commit -m "Add portfolio"
+   git push origin main
+   ```
+
+2. **Connect to Vercel**: Import `github.com/003ZEUS/Portfolio` at [vercel.com/new](https://vercel.com/new)
+
+3. **Project settings**: Leave "Root Directory" blank (use repo root). Vercel auto-detects Next.js.
+
+4. **Deploy**: Click Deploy. Build should succeed.
 
 ## Customization
 
