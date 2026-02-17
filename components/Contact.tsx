@@ -10,9 +10,26 @@ export default function Contact() {
   const CONTACT_EMAIL = "sheryar.j003@gmail.com";
   const GITHUB_URL = "https://github.com/003ZEUS";
 
+  const openGmailCompose = (subject?: string, body?: string) => {
+    const base = "https://mail.google.com/mail/";
+    const params = new URLSearchParams({
+      view: "cm",
+      fs: "1",
+      to: CONTACT_EMAIL,
+    });
+
+    if (subject) params.set("su", subject);
+    if (body) params.set("body", body);
+
+    const url = `${base}?${params.toString()}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=Portfolio Contact&body=${encodeURIComponent(message)}\n\nFrom: ${encodeURIComponent(email)}`;
+    const subject = "Portfolio Contact";
+    const body = `${message}\n\nFrom: ${email || "your email here"}`;
+    openGmailCompose(subject, body);
   };
 
   return (
@@ -32,15 +49,16 @@ export default function Contact() {
           </p>
 
           <div className="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="glass-panel rounded-xl p-4 border border-neon-purple/20 hover:border-neon-purple/50 transition-all duration-300 hover:shadow-neon-sm"
+            <button
+              type="button"
+              onClick={() => openGmailCompose()}
+              className="text-left glass-panel rounded-xl p-4 border border-neon-purple/20 hover:border-neon-purple/50 transition-all duration-300 hover:shadow-neon-sm w-full"
             >
               <div className="text-xs tracking-wide text-gray-500">EMAIL</div>
               <div className="mt-1 font-medium text-gray-200 break-all">
                 {CONTACT_EMAIL}
               </div>
-            </a>
+            </button>
             <a
               href={GITHUB_URL}
               target="_blank"
