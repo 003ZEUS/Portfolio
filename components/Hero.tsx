@@ -74,7 +74,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/Sheryar_Javed_Resume.txt"
+              href="/Sheryar-Javed-FlowCV-Resume-20260217.pdf"
               download
               className="px-8 py-4 border-2 border-neon-purple/60 text-gray-200 font-semibold rounded-lg hover:bg-neon-purple/10 transition-all duration-300 hover:shadow-neon-sm"
             >

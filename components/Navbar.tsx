@@ -54,7 +54,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="/Sheryar_Javed_Resume.txt"
+              href="/Sheryar-Javed-FlowCV-Resume-20260217.pdf"
               download
               className="px-4 py-2 text-sm font-semibold text-neon-purple-bright border border-neon-purple/40 rounded-lg hover:bg-neon-purple/10 hover:shadow-neon-sm transition-all duration-300"
             >
